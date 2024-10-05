@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      phosphor-svelte:
+        specifier: ^2.0.1
+        version: 2.0.1(svelte@5.0.0-next.262)
     devDependencies:
       '@playwright/test':
         specifier: ^1.28.1
@@ -15,7 +19,7 @@ importers:
         specifier: ^3.0.0
         version: 3.2.5(@sveltejs/kit@2.6.1(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.262)(vite@5.4.8))(svelte@5.0.0-next.262)(vite@5.4.8))
       '@sveltejs/kit':
-        specifier: ^2.0.0
+        specifier: ^2.5.27
         version: 2.6.1(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.262)(vite@5.4.8))(svelte@5.0.0-next.262)(vite@5.4.8)
       '@sveltejs/vite-plugin-svelte':
         specifier: ^4.0.0-next.6
@@ -36,7 +40,7 @@ importers:
         specifier: ^9.1.0
         version: 9.1.0(eslint@9.12.0(jiti@1.21.6))
       eslint-plugin-svelte:
-        specifier: ^2.36.0
+        specifier: ^2.43.0
         version: 2.44.1(eslint@9.12.0(jiti@1.21.6))(svelte@5.0.0-next.262)
       globals:
         specifier: ^15.0.0
@@ -45,13 +49,13 @@ importers:
         specifier: ^3.3.2
         version: 3.3.3
       prettier-plugin-svelte:
-        specifier: ^3.2.5
+        specifier: ^3.2.6
         version: 3.2.7(prettier@3.3.3)(svelte@5.0.0-next.262)
       prettier-plugin-tailwindcss:
         specifier: ^0.6.5
         version: 0.6.8(prettier-plugin-svelte@3.2.7(prettier@3.3.3)(svelte@5.0.0-next.262))(prettier@3.3.3)
       svelte:
-        specifier: ^5.0.0-next.1
+        specifier: ^5.0.0-next.256
         version: 5.0.0-next.262
       svelte-check:
         specifier: ^4.0.0
@@ -60,13 +64,13 @@ importers:
         specifier: ^3.4.9
         version: 3.4.13
       typescript:
-        specifier: ^5.0.0
+        specifier: ^5.5.0
         version: 5.6.2
       typescript-eslint:
         specifier: ^8.0.0
         version: 8.8.0(eslint@9.12.0(jiti@1.21.6))(typescript@5.6.2)
       vite:
-        specifier: ^5.0.3
+        specifier: ^5.4.4
         version: 5.4.8
       vitest:
         specifier: ^2.0.0
@@ -1132,6 +1136,11 @@ packages:
   pathval@2.0.0:
     resolution: {integrity: sha512-vE7JKRyES09KiunauX7nd2Q9/L7lhok4smP9RZTDeD4MVs72Dp2qNFVz39Nz5a0FVEW0BJR6C0DYrq6unoziZA==}
     engines: {node: '>= 14.16'}
+
+  phosphor-svelte@2.0.1:
+    resolution: {integrity: sha512-2Ryvaf1sfCNOF0zTQVghtxOs/6JKn9MV+e9uluNAT9wAosgNYnaBD210WcFGRrva1sF8cddv7EWSS//ITNN4mg==}
+    peerDependencies:
+      svelte: '>=3'
 
   picocolors@1.1.0:
     resolution: {integrity: sha512-TQ92mBOW0l3LeMeyLV6mzy/kWr8lkd/hp3mTg7wYK7zJhuBStmGMBG0BdeDZS/dZx1IukaX6Bk11zcln25o1Aw==}
@@ -2602,6 +2611,10 @@ snapshots:
   pathe@1.1.2: {}
 
   pathval@2.0.0: {}
+
+  phosphor-svelte@2.0.1(svelte@5.0.0-next.262):
+    dependencies:
+      svelte: 5.0.0-next.262
 
   picocolors@1.1.0: {}
 
